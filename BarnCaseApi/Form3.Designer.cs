@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FarmManagement));
             this.panelHeader = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblCash = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,15 +53,17 @@
             this.btnSellClick = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblProduct = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelHeader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grpAnimals.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
             // 
+            this.panelHeader.Controls.Add(this.pictureBox2);
             this.panelHeader.Controls.Add(this.pictureBox1);
             this.panelHeader.Controls.Add(this.lblCash);
             this.panelHeader.Controls.Add(this.lblTitle);
@@ -69,6 +72,17 @@
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(966, 71);
             this.panelHeader.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BarnCaseApi.Properties.Resources.arrow_right;
+            this.pictureBox1.Location = new System.Drawing.Point(887, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(67, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblCash
             // 
@@ -84,7 +98,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(38, 12);
+            this.lblTitle.Location = new System.Drawing.Point(76, 12);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(223, 30);
             this.lblTitle.TabIndex = 1;
@@ -94,7 +108,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(90, 58);
+            this.label1.Location = new System.Drawing.Point(131, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 25);
             this.label1.TabIndex = 4;
@@ -104,7 +118,7 @@
             // 
             this.lblUser.AutoSize = true;
             this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser.Location = new System.Drawing.Point(38, 58);
+            this.lblUser.Location = new System.Drawing.Point(76, 60);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(59, 25);
             this.lblUser.TabIndex = 3;
@@ -179,7 +193,7 @@
             this.groupBox1.Controls.Add(this.lblAge);
             this.groupBox1.Location = new System.Drawing.Point(20, 400);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(400, 145);
+            this.groupBox1.Size = new System.Drawing.Size(410, 145);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
@@ -253,7 +267,7 @@
             // btnSellClick
             // 
             this.btnSellClick.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSellClick.Location = new System.Drawing.Point(804, 414);
+            this.btnSellClick.Location = new System.Drawing.Point(823, 419);
             this.btnSellClick.Name = "btnSellClick";
             this.btnSellClick.Size = new System.Drawing.Size(110, 36);
             this.btnSellClick.TabIndex = 5;
@@ -264,7 +278,7 @@
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(510, 414);
+            this.textBox1.Location = new System.Drawing.Point(529, 419);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(288, 26);
             this.textBox1.TabIndex = 6;
@@ -273,22 +287,22 @@
             // lblProduct
             // 
             this.lblProduct.AutoSize = true;
-            this.lblProduct.Location = new System.Drawing.Point(436, 414);
+            this.lblProduct.Location = new System.Drawing.Point(455, 419);
             this.lblProduct.Name = "lblProduct";
             this.lblProduct.Size = new System.Drawing.Size(68, 20);
             this.lblProduct.TabIndex = 7;
             this.lblProduct.Text = "Product:";
             // 
-            // pictureBox1
+            // pictureBox2
             // 
-            this.pictureBox1.Image = global::BarnCaseApi.Properties.Resources.arrow_right;
-            this.pictureBox1.Location = new System.Drawing.Point(887, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(67, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox2.Image = global::BarnCaseApi.Properties.Resources.arrow_left;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(67, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // FarmManagement
             // 
@@ -309,13 +323,14 @@
             this.MaximizeBox = false;
             this.Name = "FarmManagement";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "  FarmManagement";
+            this.Text = "  ";
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.grpAnimals.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,5 +362,6 @@
         private System.Windows.Forms.ColumnHeader AnimalName;
         private System.Windows.Forms.ColumnHeader Price;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

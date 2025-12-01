@@ -11,6 +11,7 @@ namespace BarnCaseApi
         private List<FarmManagement.SimpleAnimal> farmAnimals;
         private FarmManagement mainForm;
         public readonly CultureInfo dollarCulture = CultureInfo.GetCultureInfo("en-US");
+
         private Timer cowTimer = new Timer();
         private Timer sheepTimer = new Timer();
         private Timer chickenTimer = new Timer();
@@ -31,8 +32,18 @@ namespace BarnCaseApi
             chickenTimer.Tick += ChickenTimer_Tick;
 
             UpdateButtons();
-            UpdateMoneyLabel();  
+            RefreshMoneyLabel();
+
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
+
+    
+      
+        private void RefreshMoneyLabel()
+        {
+            lblMoney.Text = "Cash: " + mainForm.GetMoney().ToString("C", dollarCulture);
+        }
+
 
         private void UpdateButtons()
         {
@@ -45,11 +56,7 @@ namespace BarnCaseApi
             btnChicken.Enabled = chickenExists;
         }
 
-        private void UpdateMoneyLabel()   
-        {
-            lblMoney.Text = "Cash: " + mainForm.GetMoney().ToString("C", dollarCulture);
-        }
-
+        
         private void btnCow_Click(object sender, EventArgs e)
         {
             progressCow.Value = 0;
@@ -66,11 +73,12 @@ namespace BarnCaseApi
             {
                 cowTimer.Stop();
                 mainForm.SetMoney(mainForm.GetMoney() + 15);
-                UpdateMoneyLabel();   
+                RefreshMoneyLabel();
                 MessageBox.Show("Cow produced Milk (+$15)");
             }
         }
 
+      
         private void btnSheep_Click(object sender, EventArgs e)
         {
             progressSheep.Value = 0;
@@ -87,11 +95,12 @@ namespace BarnCaseApi
             {
                 sheepTimer.Stop();
                 mainForm.SetMoney(mainForm.GetMoney() + 25);
-                UpdateMoneyLabel(); 
+                RefreshMoneyLabel();
                 MessageBox.Show("Sheep produced Wool (+$25)");
             }
         }
 
+     
         private void btnChicken_Click(object sender, EventArgs e)
         {
             progressChicken.Value = 0;
@@ -108,11 +117,12 @@ namespace BarnCaseApi
             {
                 chickenTimer.Stop();
                 mainForm.SetMoney(mainForm.GetMoney() + 5);
-                UpdateMoneyLabel(); 
+                RefreshMoneyLabel();
                 MessageBox.Show("Chicken laid Eggs (+$5)");
             }
         }
 
+       
         private void PicToLogin_Click(object sender, EventArgs e)
         {
             this.Close();

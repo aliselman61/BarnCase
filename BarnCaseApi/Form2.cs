@@ -24,6 +24,7 @@ namespace BarnCaseApi
             lblRegister.Font = new Font(lblRegister.Font, FontStyle.Underline);
 
             lblRegister.Click += LblRegister_Click;
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         private void ButtonLogin_Click(object sender, EventArgs e)
         {
@@ -83,14 +84,13 @@ namespace BarnCaseApi
                 MessageBox.Show("Unexpected error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+         
         private void LblRegister_Click(object sender, EventArgs e)
         {
             SignUp registerForm = new SignUp();
             registerForm.Show();
             this.Hide();
         }
-         
         private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
             textBox2.UseSystemPasswordChar = !checkBox1.Checked;

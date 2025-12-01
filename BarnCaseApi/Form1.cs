@@ -36,6 +36,7 @@ namespace BarnCaseApi
             textBox4.KeyPress += NoWhitespace_KeyPress;
 
             ShowPassword.CheckedChanged += ShowPassword_CheckedChanged;
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
  
         private void ShowPassword_CheckedChanged(object sender, EventArgs e)
@@ -49,6 +50,7 @@ namespace BarnCaseApi
         {
             ValidateAll();
         }
+
         private void OnlyLetters_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
@@ -98,6 +100,7 @@ namespace BarnCaseApi
                 lblErrorPassword.Text = "";
                 lblErrorPassword.Visible = false;
             }
+
         }
         private void Button1_Click(object sender, EventArgs e)
         {
@@ -159,9 +162,9 @@ namespace BarnCaseApi
         {
             using (var rng = new RNGCryptoServiceProvider())
             {
-                byte[] salt = new byte[size];
-                rng.GetBytes(salt);
-                return salt;
+               byte[] salt = new byte[size];
+               rng.GetBytes(salt);
+               return salt;
             }
         }
 
@@ -169,15 +172,15 @@ namespace BarnCaseApi
         {
             using (var pbkdf2 = new Rfc2898DeriveBytes(password, salt, iterations, HashAlgorithmName.SHA256))
             {
-                return pbkdf2.GetBytes(32); 
+              return pbkdf2.GetBytes(32); 
             }
         }
 
         private void PicToLogin_Click(object sender, EventArgs e)
         {
-            SignIn loginForm = new SignIn();
-            loginForm.Show();
-            this.Hide();
+           SignIn loginForm = new SignIn();
+           loginForm.Show();
+           this.Hide();
         }
     }
 }

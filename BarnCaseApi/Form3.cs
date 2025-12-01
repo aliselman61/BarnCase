@@ -1,5 +1,4 @@
-﻿using BarnCaseApi;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -12,7 +11,8 @@ namespace BarnCaseApi
         public string LoggedInUsername { get; set; }
 
         public List<SimpleAnimal> animals = new List<SimpleAnimal>();
-        private decimal balance = 500m;
+        private decimal balance = 0;
+
         private readonly CultureInfo dollarCulture = CultureInfo.GetCultureInfo("en-US");
         private Timer agingTimer;
         private Random rnd = new Random();
@@ -35,12 +35,12 @@ namespace BarnCaseApi
             this.Load += FarmManagement_Load;
 
             txtAge.MaxLength = 2;
-            cmbType.MaxLength = 8;
-            cmbGender.MaxLength = 6;
             textBox1.MaxLength = 10;
 
             btnAddAnimal.Click += btnAddAnimal_Click;
             btnSellClick.Click += btnSellClick_Click;
+
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void FarmManagement_Load(object sender, EventArgs e)
@@ -48,12 +48,22 @@ namespace BarnCaseApi
             if (!string.IsNullOrEmpty(LoggedInUsername))
                 label1.Text = LoggedInUsername;
 
-            if (cmbType.Items.Count == 0)
-                cmbType.Items.AddRange(new string[] { "Cow", "Chicken", "Sheep" });
+            // Load money + animals from DB
+            balance = Database.GetUserMoney(LoggedInUsername);
+            animals = Database.LoadAnimals(LoggedInUsername);
 
-            if (cmbGender.Items.Count == 0)
-                cmbGender.Items.AddRange(new string[] { "Female" });
+            SetupListView();
+            LoadAnimalsToListView();
+            UpdateBalanceLabel();
 
+            agingTimer = new Timer();
+            agingTimer.Interval = 10000;
+            agingTimer.Tick += AgingTimer_Tick;
+            agingTimer.Start();
+        }
+
+        private void SetupListView()
+        {
             lstAnimals.View = View.Details;
             lstAnimals.FullRowSelect = true;
             lstAnimals.GridLines = true;
@@ -66,13 +76,21 @@ namespace BarnCaseApi
                 lstAnimals.Columns.Add("Gender", 70);
                 lstAnimals.Columns.Add("Price ($)", 80);
             }
+        }
 
-            UpdateBalanceLabel();
+        private void LoadAnimalsToListView()
+        {
+            lstAnimals.Items.Clear();
 
-            agingTimer = new Timer();
-            agingTimer.Interval = 10000;
-            agingTimer.Tick += AgingTimer_Tick;
-            agingTimer.Start();
+            foreach (var a in animals)
+            {
+                ListViewItem item = new ListViewItem(a.Name);
+                item.SubItems.Add(a.Type);
+                item.SubItems.Add(a.Age.ToString());
+                item.SubItems.Add(a.Gender);
+                item.SubItems.Add(a.Price.ToString("C", dollarCulture));
+                lstAnimals.Items.Add(item);
+            }
         }
 
         private void btnAddAnimal_Click(object sender, EventArgs e)
@@ -101,6 +119,7 @@ namespace BarnCaseApi
             }
 
             balance -= price;
+            Database.SetUserMoney(LoggedInUsername, balance);
 
             int count = animals.Count(a => a.Type == type) + 1;
             string name = type + "_" + count;
@@ -117,6 +136,7 @@ namespace BarnCaseApi
             };
 
             animals.Add(animal);
+            Database.SaveAnimal(LoggedInUsername, animal);
 
             ListViewItem item = new ListViewItem(animal.Name);
             item.SubItems.Add(animal.Type);
@@ -142,7 +162,8 @@ namespace BarnCaseApi
                 return;
             }
 
-            SimpleAnimal animal = animals.FirstOrDefault(a => a.Name.Equals(sellName, StringComparison.OrdinalIgnoreCase));
+            SimpleAnimal animal =
+                animals.FirstOrDefault(a => a.Name.Equals(sellName, StringComparison.OrdinalIgnoreCase));
 
             if (animal == null)
             {
@@ -151,7 +172,10 @@ namespace BarnCaseApi
             }
 
             balance += animal.Price;
+            Database.SetUserMoney(LoggedInUsername, balance);
+
             animals.Remove(animal);
+            Database.DeleteAnimal(animal.Id);
 
             foreach (ListViewItem item in lstAnimals.Items)
             {
@@ -188,9 +212,7 @@ namespace BarnCaseApi
                 decimal factor = 1m;
 
                 if (a.Age <= gainLimit)
-                {
                     factor += 0.05m * a.Age;
-                }
                 else
                 {
                     factor += 0.05m * gainLimit;
@@ -210,17 +232,20 @@ namespace BarnCaseApi
                     a.DeathCause = deathCauses[rnd.Next(deathCauses.Length)];
                     deadAnimals.Add(a);
                 }
+
+                Database.UpdateAnimal(a, LoggedInUsername);
             }
 
             foreach (SimpleAnimal d in deadAnimals)
             {
                 animals.Remove(d);
+                Database.DeleteAnimal(d.Id);
 
-                foreach (ListViewItem row in lstAnimals.Items)
+                foreach (ListViewItem item in lstAnimals.Items)
                 {
-                    if (row.Text == d.Name)
+                    if (item.Text == d.Name)
                     {
-                        lstAnimals.Items.Remove(row);
+                        lstAnimals.Items.Remove(item);
                         break;
                     }
                 }
@@ -228,15 +253,7 @@ namespace BarnCaseApi
                 MessageBox.Show(d.Name + " has died (" + d.DeathCause + ")");
             }
 
-            foreach (ListViewItem item in lstAnimals.Items)
-            {
-                SimpleAnimal a = animals.FirstOrDefault(an => an.Name == item.Text);
-                if (a != null)
-                {
-                    item.SubItems[2].Text = a.Age.ToString();
-                    item.SubItems[4].Text = a.Price.ToString("C", dollarCulture);
-                }
-            }
+            LoadAnimalsToListView();
         }
 
         private decimal GetAnimalPrice(string type)
@@ -255,7 +272,7 @@ namespace BarnCaseApi
             type = type.ToLower();
 
             if (type == "cow") return 25;
-            if (type == "chicken") return 6;
+            if (type == "chicken") return 3;
             if (type == "sheep") return 15;
 
             return 10;
@@ -266,8 +283,14 @@ namespace BarnCaseApi
             lblCash.Text = "Cash: " + balance.ToString("C", dollarCulture);
         }
 
-        public decimal GetMoney() { return balance; }
-        public void SetMoney(decimal v) { balance = v; UpdateBalanceLabel(); }
+        public decimal GetMoney() => balance;
+
+        public void SetMoney(decimal value)
+        {
+            balance = value;
+            Database.SetUserMoney(LoggedInUsername, balance);
+            UpdateBalanceLabel();
+        }
 
         public class SimpleAnimal
         {
@@ -284,6 +307,13 @@ namespace BarnCaseApi
         {
             Production p = new Production(animals, this);
             p.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            SignIn s = new SignIn(); 
+            s.Show();
             this.Hide();
         }
     }
