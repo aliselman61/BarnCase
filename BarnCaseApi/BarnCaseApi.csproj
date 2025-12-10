@@ -135,5 +135,15 @@
   <ItemGroup>
     <None Include="Resources\download.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BarnCase.Business\BarnCase.Business.csproj">
+      <Project>{8903a6bf-7354-4d51-90bc-323cefe7cdfd}</Project>
+      <Name>BarnCase.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BarnCase.Entities\BarnCase.Entities.csproj">
+      <Project>{8b1f4737-0028-4d50-a9c7-17401cea4c75}</Project>
+      <Name>BarnCase.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

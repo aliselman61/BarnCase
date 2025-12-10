@@ -1,0 +1,9 @@
+C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.DataAccess\obj\Debug\BarnCase.DataAccess.csproj.AssemblyReference.cache
+C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.DataAccess\obj\Debug\BarnCase.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.DataAccess\bin\Debug\BarnCase.DataAccess.dll
+C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.DataAccess\bin\Debug\BarnCase.DataAccess.pdb
+C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.DataAccess\bin\Debug\BarnCase.Entities.dll
+C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.DataAccess\bin\Debug\BarnCase.Entities.pdb
+C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.DataAccess\obj\Debug\BarnCase.92357AC7.Up2Date
+C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.DataAccess\obj\Debug\BarnCase.DataAccess.dll
+C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.DataAccess\obj\Debug\BarnCase.DataAccess.pdb

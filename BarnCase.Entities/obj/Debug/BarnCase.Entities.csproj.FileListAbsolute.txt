@@ -1,0 +1,6 @@
+C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.Entities\bin\Debug\BarnCase.Entities.dll
+C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.Entities\bin\Debug\BarnCase.Entities.pdb
+C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.Entities\obj\Debug\BarnCase.Entities.csproj.AssemblyReference.cache
+C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.Entities\obj\Debug\BarnCase.Entities.csproj.CoreCompileInputs.cache
+C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.Entities\obj\Debug\BarnCase.Entities.dll
+C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.Entities\obj\Debug\BarnCase.Entities.pdb
