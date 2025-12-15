@@ -10,7 +10,7 @@ namespace BarnCase.DataAccess
         {
             using (SqlConnection conn = DbConfig.GetConnection())
             using (SqlCommand cmd = new SqlCommand(
-                "SELECT Money FROM UserMoney WHERE Username=@u", conn))
+             "SELECT Money FROM UserMoney WHERE Username=@u", conn))
             {
                 cmd.Parameters.Add("@u", SqlDbType.NVarChar, 40).Value = username;
 
@@ -30,10 +30,10 @@ namespace BarnCase.DataAccess
         {
             using (SqlConnection conn = DbConfig.GetConnection())
             {
-                conn.Open();
+                conn.Open(); 
 
                 using (SqlCommand checkCmd = new SqlCommand(
-                    "SELECT COUNT(*) FROM UserMoney WHERE Username=@u", conn))
+                 "SELECT COUNT(*) FROM UserMoney WHERE Username=@u", conn))
                 {
                     checkCmd.Parameters.Add("@u", SqlDbType.NVarChar, 40).Value = username;
                     int count = (int)checkCmd.ExecuteScalar();
@@ -46,7 +46,7 @@ namespace BarnCase.DataAccess
 
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {
-                        cmd.Parameters.Add("@u", SqlDbType.NVarChar, 40).Value = username;
+                        cmd.Parameters.Add("@u", SqlDbType.NVarChar, 40).Value = username;  
                         cmd.Parameters.Add("@m", SqlDbType.Decimal).Value = money;
                         cmd.ExecuteNonQuery();
                     }

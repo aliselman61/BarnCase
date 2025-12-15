@@ -3,7 +3,7 @@
 namespace BarnCase.Core
 {
     public static class PasswordHasher
-    {
+    { 
         public static byte[] GenerateSalt(int size)
         {
             using (var rng = RandomNumberGenerator.Create())

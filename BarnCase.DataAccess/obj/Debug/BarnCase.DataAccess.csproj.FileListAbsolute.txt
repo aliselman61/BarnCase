@@ -7,3 +7,8 @@ C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.DataAccess\bin\Debug\Ba
 C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.DataAccess\obj\Debug\BarnCase.92357AC7.Up2Date
 C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.DataAccess\obj\Debug\BarnCase.DataAccess.dll
 C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.DataAccess\obj\Debug\BarnCase.DataAccess.pdb
+C:\Users\ALİ\source\repos\aliselman61\BarnCase\BarnCase.DataAccess\bin\Debug\BarnCase.DataAccess.dll.config
+C:\Users\ALİ\source\repos\aliselman61\BarnCase\BarnCase.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\ALİ\source\repos\aliselman61\BarnCase\BarnCase.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ALİ\source\repos\aliselman61\BarnCase\BarnCase.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\ALİ\source\repos\aliselman61\BarnCase\BarnCase.DataAccess\bin\Debug\EntityFramework.SqlServer.xml

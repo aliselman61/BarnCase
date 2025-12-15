@@ -99,7 +99,7 @@
             // 
             this.lblCash.AutoSize = true;
             this.lblCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCash.Location = new System.Drawing.Point(725, 15);
+            this.lblCash.Location = new System.Drawing.Point(709, 15);
             this.lblCash.Name = "lblCash";
             this.lblCash.Size = new System.Drawing.Size(108, 30);
             this.lblCash.TabIndex = 2;

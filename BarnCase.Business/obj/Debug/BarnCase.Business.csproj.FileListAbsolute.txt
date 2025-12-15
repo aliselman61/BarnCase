@@ -9,3 +9,6 @@ C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.Business\bin\Debug\Barn
 C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.Business\obj\Debug\BarnCase.C6DDB3C7.Up2Date
 C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.Business\obj\Debug\BarnCase.Business.dll
 C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCase.Business\obj\Debug\BarnCase.Business.pdb
+C:\Users\ALİ\source\repos\aliselman61\BarnCase\BarnCase.Business\bin\Debug\EntityFramework.dll
+C:\Users\ALİ\source\repos\aliselman61\BarnCase\BarnCase.Business\bin\Debug\BarnCase.DataAccess.dll.config
+C:\Users\ALİ\source\repos\aliselman61\BarnCase\BarnCase.Business\bin\Debug\EntityFramework.xml

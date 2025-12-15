@@ -62,3 +62,6 @@ C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCaseApi\obj\Debug\uk\BarnCas
 C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCaseApi\obj\Debug\BarnCase.CCFED2BF.Up2Date
 C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCaseApi\obj\Debug\BarnCaseApi.exe
 C:\Users\ALİ\Source\Repos\aliselman61\BarnCase\BarnCaseApi\obj\Debug\BarnCaseApi.pdb
+C:\Users\ALİ\source\repos\aliselman61\BarnCase\BarnCaseApi\bin\Debug\EntityFramework.dll
+C:\Users\ALİ\source\repos\aliselman61\BarnCase\BarnCaseApi\bin\Debug\BarnCase.DataAccess.dll.config
+C:\Users\ALİ\source\repos\aliselman61\BarnCase\BarnCaseApi\bin\Debug\EntityFramework.xml
