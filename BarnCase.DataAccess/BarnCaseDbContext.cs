@@ -6,11 +6,29 @@ namespace BarnCase.DataAccess
     public class BarnCaseDbContext : DbContext
     {
         public BarnCaseDbContext()
-            : base("name=BarnCaseDB")
+            : base("name=BarnCaseDb")
         {
         }
-        public DbSet<Animal> Animals { get; set; }
+
+        public DbSet<UserHash> UserHashes { get; set; }
         public DbSet<UserMoney> UserMoney { get; set; }
-        public DbSet<HashInfo> Hash { get; set; }
+        public DbSet<Animal> Animals { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<UserHash>()
+                .ToTable("Hash")         
+
+                .HasKey(x => x.UserId);
+
+            modelBuilder.Entity<UserMoney>()
+                .ToTable("UserMoney")
+                .HasKey(x => x.Username);
+
+            modelBuilder.Entity<Animal>()
+                .ToTable("Animals");
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

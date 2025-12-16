@@ -12,8 +12,8 @@ namespace BarnCase.DataAccess
             using (var db = new BarnCaseDbContext())
             {
                 return db.Animals
-                         .Where(a => a.Username == username)
-                         .ToList();
+                   .Where(a => a.Username == username)
+                   .ToList();
             }
         }
 

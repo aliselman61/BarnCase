@@ -5,6 +5,38 @@
     {
       "AbsoluteMoniker": "D:0:0:{31AA2D46-6B52-4B60-BC9D-0BC73CA9B4B2}|BarnCase.DataAccess\\BarnCase.DataAccess.csproj|c:\\users\\al\u0130\\source\\repos\\aliselman61\\barncase\\barncase.dataaccess\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31AA2D46-6B52-4B60-BC9D-0BC73CA9B4B2}|BarnCase.DataAccess\\BarnCase.DataAccess.csproj|solutionrelative:barncase.dataaccess\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31AA2D46-6B52-4B60-BC9D-0BC73CA9B4B2}|BarnCase.DataAccess\\BarnCase.DataAccess.csproj|C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\barncase.dataaccess\\barncasedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31AA2D46-6B52-4B60-BC9D-0BC73CA9B4B2}|BarnCase.DataAccess\\BarnCase.DataAccess.csproj|solutionrelative:barncase.dataaccess\\barncasedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1F4737-0028-4D50-A9C7-17401CEA4C75}|BarnCase.Entities\\BarnCase.Entities.csproj|C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\barncase.entities\\userhash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1F4737-0028-4D50-A9C7-17401CEA4C75}|BarnCase.Entities\\BarnCase.Entities.csproj|solutionrelative:barncase.entities\\userhash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31AA2D46-6B52-4B60-BC9D-0BC73CA9B4B2}|BarnCase.DataAccess\\BarnCase.DataAccess.csproj|c:\\users\\al\u0130\\source\\repos\\aliselman61\\barncase\\barncase.dataaccess\\migrations\\202512161317081_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31AA2D46-6B52-4B60-BC9D-0BC73CA9B4B2}|BarnCase.DataAccess\\BarnCase.DataAccess.csproj|solutionrelative:barncase.dataaccess\\migrations\\202512161317081_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31AA2D46-6B52-4B60-BC9D-0BC73CA9B4B2}|BarnCase.DataAccess\\BarnCase.DataAccess.csproj|C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\barncase.dataaccess\\dbconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31AA2D46-6B52-4B60-BC9D-0BC73CA9B4B2}|BarnCase.DataAccess\\BarnCase.DataAccess.csproj|solutionrelative:barncase.dataaccess\\dbconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1F4737-0028-4D50-A9C7-17401CEA4C75}|BarnCase.Entities\\BarnCase.Entities.csproj|C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\barncase.entities\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1F4737-0028-4D50-A9C7-17401CEA4C75}|BarnCase.Entities\\BarnCase.Entities.csproj|solutionrelative:barncase.entities\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1F4737-0028-4D50-A9C7-17401CEA4C75}|BarnCase.Entities\\BarnCase.Entities.csproj|C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\barncase.entities\\usermoney.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1F4737-0028-4D50-A9C7-17401CEA4C75}|BarnCase.Entities\\BarnCase.Entities.csproj|solutionrelative:barncase.entities\\usermoney.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31AA2D46-6B52-4B60-BC9D-0BC73CA9B4B2}|BarnCase.DataAccess\\BarnCase.DataAccess.csproj|c:\\users\\al\u0130\\source\\repos\\aliselman61\\barncase\\barncase.dataaccess\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31AA2D46-6B52-4B60-BC9D-0BC73CA9B4B2}|BarnCase.DataAccess\\BarnCase.DataAccess.csproj|solutionrelative:barncase.dataaccess\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCD90979-1BE9-4060-8184-CB1C6E6F1FEA}|BarnCaseApi\\BarnCaseApi.csproj|C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\barncaseapi\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FCD90979-1BE9-4060-8184-CB1C6E6F1FEA}|BarnCaseApi\\BarnCaseApi.csproj|solutionrelative:barncaseapi\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,15 +58,27 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
@@ -44,10 +88,113 @@
               "RelativeDocumentMoniker": "BarnCase.DataAccess\\AnimalRepository.cs",
               "ToolTip": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCase.DataAccess\\AnimalRepository.cs",
               "RelativeToolTip": "BarnCase.DataAccess\\AnimalRepository.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBgAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T07:39:53.734Z",
+              "WhenOpened": "2025-12-16T13:20:27.992Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "202512161317081_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCase.DataAccess\\Migrations\\202512161317081_InitialCreate.cs",
+              "RelativeDocumentMoniker": "BarnCase.DataAccess\\Migrations\\202512161317081_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCase.DataAccess\\Migrations\\202512161317081_InitialCreate.cs",
+              "RelativeToolTip": "BarnCase.DataAccess\\Migrations\\202512161317081_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:17:20.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BarnCaseDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCase.DataAccess\\BarnCaseDbContext.cs",
+              "RelativeDocumentMoniker": "BarnCase.DataAccess\\BarnCaseDbContext.cs",
+              "ToolTip": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCase.DataAccess\\BarnCaseDbContext.cs",
+              "RelativeToolTip": "BarnCase.DataAccess\\BarnCaseDbContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:12:32.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DbConfig.cs",
+              "DocumentMoniker": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCase.DataAccess\\DbConfig.cs",
+              "RelativeDocumentMoniker": "BarnCase.DataAccess\\DbConfig.cs",
+              "ToolTip": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCase.DataAccess\\DbConfig.cs",
+              "RelativeToolTip": "BarnCase.DataAccess\\DbConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:42:48.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Animal.cs",
+              "DocumentMoniker": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCase.Entities\\Animal.cs",
+              "RelativeDocumentMoniker": "BarnCase.Entities\\Animal.cs",
+              "ToolTip": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCase.Entities\\Animal.cs",
+              "RelativeToolTip": "BarnCase.Entities\\Animal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:11:55.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserMoney.cs",
+              "DocumentMoniker": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCase.Entities\\UserMoney.cs",
+              "RelativeDocumentMoniker": "BarnCase.Entities\\UserMoney.cs",
+              "ToolTip": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCase.Entities\\UserMoney.cs",
+              "RelativeToolTip": "BarnCase.Entities\\UserMoney.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:11:54.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCase.DataAccess\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "BarnCase.DataAccess\\Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCase.DataAccess\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "BarnCase.DataAccess\\Migrations\\Configuration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:16:54.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserHash.cs",
+              "DocumentMoniker": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCase.Entities\\UserHash.cs",
+              "RelativeDocumentMoniker": "BarnCase.Entities\\UserHash.cs",
+              "ToolTip": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCase.Entities\\UserHash.cs",
+              "RelativeToolTip": "BarnCase.Entities\\UserHash.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:11:41.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCaseApi\\App.config",
+              "RelativeDocumentMoniker": "BarnCaseApi\\App.config",
+              "ToolTip": "C:\\Users\\AL\u0130\\Source\\Repos\\aliselman61\\BarnCase\\BarnCaseApi\\App.config",
+              "RelativeToolTip": "BarnCaseApi\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-16T12:15:43.722Z"
             }
           ]
         }
